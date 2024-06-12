@@ -1,13 +1,103 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.App::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.sidenav{
+    background-color: rgb(0, 0, 0);
+}
+.cursive{
+  font-family: 'Dancing Script', cursive;
+}
+.sociallinks:hover .socialimg{
+     width: 1rem;
+}
+.underlineanim{
+   animation-name: ulanimation;
+   animation-duration: 1s;
+   width: 100%;
+   animation-fill-mode: forwards;
+}
+.heading:hover .underlineanim{
+  animation-name: ulanimation-out;
+  animation-duration: 0.5s;
+ /* width: 0rem; */
+}
+.inside{
+  width: 100%;
+  animation-name: ulanimation-in;
+   animation-duration: 1s;
+}
+@keyframes ulanimation{
+  from {
+    width: 100%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes ulanimation-out{
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0rem;
+  }
+}
+@keyframes ulanimation-in{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.outside:hover .inside{
+  width: 0;
+}
+.CircularProgressbar-path {
+  stroke: rgb(3, 141, 141);
+}
+.CircularProgressbar-trail {
+  stroke: rgba(255, 255, 255, 0.21);
+}
+.CircularProgressbar-text {
+  fill: white;
+}
+.graybg{
+  background-color: rgba(0, 0, 0, 0.669);
+}
+.trans{
+  transition: 0.5s;
+}
+input:required:valid ~ .floating,
+input:focus ~ .floating{
+    font-size: 12px;
+    padding-top: 0.25rem;
+    transition: all smooth;
+    transition-delay: 5ms;
+    transition-duration: 0.25s;
+    
+}
+input{
+    background: linear-gradient(rgba(53, 52, 52, 0.32),rgba(56, 55, 55, 0.311));
+}
+textarea:required:valid ~ .floating,
+textarea:focus ~ .floating{
+    font-size: 12px;
+    padding-top: 0.25rem;
+    transition: all smooth;
+    transition-delay: 5ms;
+    transition-duration: 0.25s;
+    
+}
+textarea{
+    background: linear-gradient(rgba(53, 52, 52, 0.32),rgba(56, 55, 55, 0.311));
 }

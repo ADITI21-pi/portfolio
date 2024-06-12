@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import { Components } from "react";
+import Sidenav from './components/Sidenav.js'
+import About from './components/About.js'
+import Projects from './components/Projects.js'
+import Contact from './components/Contact.js'
+import Upnav from './components/Upnav.js'
 
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="fixed">
+        <Sidenav />
+      </div>
+      <div className="lg:ml-0 ml-96">
+      <div className=' bg-black'>
+        <Upnav/>
+        {/* <About/>
+        <Projects/>
+        <Contact/> */}
+        <Routes>
+          <Route>
+            <Route path="/portfolio/" element={<About/>}/>
+          </Route>
+          <Route path="/portfolio/projects" element={<Projects/>} />
+          <Route path="/portfolio/contact" element={<Contact/>} />
+        </Routes>         
+    </div>
+      </div>
     </div>
   );
 }
