@@ -22,8 +22,8 @@ const About = () => {
           <div className=" mt-10 grid grid-cols-5 gap-x-20 gap-y-10 xl:grid-cols-4 md:grid-cols-4 vsm:grid-cols-3">
             {/* <div className="flex flex-row justify-center items-center mt-2"> */}
                 <Circlebar val='60' topic='Java'/>
-                <Circlebar val='60' topic='DSA'/>
-                <Circlebar val='30' topic='Python'/>
+                <Circlebar val='45' topic='DSA'/>
+                <Circlebar val='25' topic='Python'/>
             {/* </div> */}
             {/* <div className="flex flex-row justify-center items-center mt-2"> */}
                 <Circlebar val='80' topic='HTML'/>
@@ -32,10 +32,11 @@ const About = () => {
             {/* </div> */}
             {/* <div className="flex flex-row justify-center items-center mt-2"> */}
                 <Circlebar val='60' topic='React.js'/>
-                <Circlebar val='60' topic='MySQL'/>
-                <Circlebar val='80' topic='Bootstrap'/>
+                <Circlebar val='60' topic='Node.js'/>
+                <Circlebar val='60' topic='SQL'/>
             {/* </div> */}
             {/* <div className="flex flex-row justify-center items-center mt-2"> */}
+                <Circlebar val='80' topic='Bootstrap'/>
                 <Circlebar val='60' topic='Tailwind CSS'/>
                 <Circlebar val='80' topic='Git & GitHub'/>
             {/* </div> */}
