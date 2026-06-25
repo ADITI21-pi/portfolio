@@ -2,7 +2,7 @@ import React from 'react'
 import Socialprofiles from './Socialprofiles'
 const Aboutdisc = () => {
   return (
-    <div className="">
+    <div className="w-full">
         <h1 className="cursive text-5xl text-cyan-500">Hello, I am Aditi Jain</h1>
         <h1 className=' pt-4 text-cyan-500'>FRONTEND DEVELOPER || SOFTWARE PROGRAMMER</h1>
         <p className='pt-4 text-justify'>I have recently completed a B.Tech in Electrical Engineering at Madhav Institute of Technology and Science, Gwalior. My aggregate CGPA is 7.4. My interests lie in Competitive Programming, DSA, and Web Development. Additionally, I've completed two projects an amazon clone site and a weather app. My frontend development tech stack includes HTML, CSS, JavaScript, Node.js, React.js, MySQL. I'm proficient in programming with Java, and I also possess a foundational understanding of JavaScript. I consider myself an enthusiastic learner and always strive to excel in any assigned task.</p>

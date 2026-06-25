@@ -28,9 +28,9 @@ const Circlebar = (props) => {
         <CircularProgressbar
           value={props.val}
           text={`${props.val}%`}
-          className="w-16 xl:w-20 lg:w-16 md:w-20 vsm:w-16"
+          className="w-12 h-12 xl:w-14 xl:h-14 lg:w-12 lg:h-12 md:w-14 md:h-14 vsm:w-12 vsm:h-12"
           styles={buildStyles({
-            textSize: "20px",
+            textSize: "16px",
             textColor: "#ffffff",
             pathColor: "#22d3ee",
             trailColor: "#2d2d2d",

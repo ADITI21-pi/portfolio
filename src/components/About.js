@@ -30,21 +30,21 @@ const About = () => {
           xl:flex-col
           lg:flex-row
           md:flex-col
-          gap-20
-          justify-between
-          items-center
+          gap-12
+          items-start
         "
       >
         {/* About Description */}
-        <div className="flex flex-row justify-between items-center">
+        <div className="w-1/2 xl:w-full md:w-full">
           <Aboutdisc />
         </div>
 
         {/* Skills Section */}
         <div
           className="
-            w-full
-            max-w-3xl
+            w-1/2
+            xl:w-full
+            md:w-full
             bg-white/5
             backdrop-blur-md
             border
@@ -59,9 +59,6 @@ const About = () => {
         >
           {/* Skills Heading */}
           <div className="mb-8">
-            <span className="text-cyan-400 uppercase tracking-[4px] text-sm">
-              Expertise
-            </span>
 
             <h1
               className="
@@ -76,8 +73,7 @@ const About = () => {
             >
               My Skills
             </h1>
-
-            <div className="w-20 h-1 bg-cyan-400 rounded-full mt-3"></div>
+              <div className="underlineanim border-cyan-500 border w-64 duration-500 mt-3"></div>
           </div>
 
           {/* Skills Grid */}
@@ -91,8 +87,8 @@ const About = () => {
               md:grid-cols-3
               sm:grid-cols-3
               vsm:grid-cols-2
-              gap-x-10
-              gap-y-10
+              gap-x-6
+              gap-y-6
             "
           >
             <Circlebar val="20" topic="Java" />
