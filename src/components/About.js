@@ -13,7 +13,7 @@ const About = () => {
         <h1 className="cursive mt-5 text-7xl vsm:text-5xl">
           About me
         </h1>
-
+ 
         <div className="underlineanim border-cyan-500 border w-64 duration-500 mt-3 vsm:w-60"></div>
       </div>
 
